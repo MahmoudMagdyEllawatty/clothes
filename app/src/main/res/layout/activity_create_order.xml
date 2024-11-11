@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".activities.customer.ui.home.CreateOrderActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center_horizontal"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dress"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@mipmap/dress"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/purple_700"/>
+
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="@string/size"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/size"
+        android:inputType="text"
+        android:padding="10dp"
+        android:hint="@string/enter_your_size"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="@string/color"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/color"
+        android:inputType="text"
+        android:padding="10dp"
+        android:hint="@string/enter_your_color"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="@string/description"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:hint="@string/enter_your_description"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_bg"
+        android:lines="4"
+        android:gravity="top"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.widget.Button
+        android:id="@+id/send_order"
+        android:textColor="@color/white"
+        android:text="@string/send_order"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

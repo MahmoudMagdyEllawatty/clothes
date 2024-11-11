@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "728520451276",
+    "project_id": "clothesapp-44de8",
+    "storage_bucket": "clothesapp-44de8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728520451276:android:7d401861b8b1e9d8ad8e69",
+        "android_client_info": {
+          "package_name": "com.clothes.clothesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtlw6eZQNQDUe3wKv0kWFS3HA3Y38Xb3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

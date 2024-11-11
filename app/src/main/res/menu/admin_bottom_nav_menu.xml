@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_tailors"
+        android:icon="@mipmap/tailor"
+        android:title="@string/title_tailors" />
+
+    <item
+        android:id="@+id/navigation_customers"
+        android:icon="@mipmap/customers"
+        android:title="@string/title_customers" />
+
+    <item
+        android:id="@+id/navigation_complaints"
+        android:icon="@mipmap/complaint"
+        android:title="@string/title_complaints" />
+
+</menu>

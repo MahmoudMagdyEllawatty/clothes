@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_my_designs"
+        android:icon="@mipmap/tailor"
+        android:title="@string/title_my_works" />
+
+    <item
+        android:id="@+id/navigation_tailor_orders"
+        android:icon="@mipmap/order"
+        android:title="@string/title_orders" />
+
+    <item
+        android:id="@+id/navigation_tailor_profile"
+        android:icon="@mipmap/profile"
+        android:title="@string/title_profile" />
+
+</menu>
