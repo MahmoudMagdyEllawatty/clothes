@@ -49,15 +49,7 @@ public class HomeFragment extends Fragment {
         tailorsList.setItemAnimator(new DefaultItemAnimator());
 
         ImageButton filter = root.findViewById(R.id.search);
-        filter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SharedData.gallery = null;
-                Intent intent = new Intent(getActivity(), WorkActivity.class);
-                startActivity(intent);
-            }
-        });
-
+       filter.setVisibility(View.GONE);
 
         loadData();
         return root;

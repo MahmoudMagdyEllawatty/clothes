@@ -16,14 +16,14 @@
         android:layout_height="200dp"/>
 
     <TextView
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/email"

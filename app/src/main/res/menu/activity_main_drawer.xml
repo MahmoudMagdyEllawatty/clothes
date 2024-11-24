@@ -12,6 +12,12 @@
             android:id="@+id/nav_gallery"
             android:icon="@mipmap/order"
             android:title="@string/title_orders" />
+
+        <item
+            android:id="@+id/nav_complaints"
+            android:icon="@mipmap/complaint"
+            android:title="@string/title_complaints" />
+
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@mipmap/profile"

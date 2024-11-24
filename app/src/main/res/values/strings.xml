@@ -86,6 +86,14 @@
     <string name="please_complete_data">Please,Complete Data</string>
     <string name="logout">Logout</string>
     <string name="tailors">Tailors List</string>
+    <string name="customer_">Customer :</string>
+    <string name="title_">Title :</string>
+    <string name="description_">\nDescription :</string>
+    <string name="reply">Reply :</string>
+    <string name="enter_your_reply">Enter Your Reply</string>
+    <string name="complaint_accepted_successfully">Reply Sent Successfully</string>
+    <string name="complaint_added_successfully">Complaint Added Successfully</string>
+    <string name="send">Send</string>
 
     <array name="card_types">
         <item>Visa</item>
