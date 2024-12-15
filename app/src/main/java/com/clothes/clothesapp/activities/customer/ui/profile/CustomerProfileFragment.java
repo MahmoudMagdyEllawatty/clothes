@@ -116,13 +116,24 @@ public class CustomerProfileFragment extends Fragment {
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     private boolean checkReadPermission(){
-        int permissionWriteExternal = ContextCompat.checkSelfPermission(getActivity(),
-                Manifest.permission.READ_EXTERNAL_STORAGE);
-        if (permissionWriteExternal != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(getActivity(),new String[]{ Manifest.permission.READ_EXTERNAL_STORAGE},2);
-            return false;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+            int permissionWriteExternal = ContextCompat.checkSelfPermission(getActivity(),
+                    Manifest.permission.READ_MEDIA_IMAGES);
+            if (permissionWriteExternal != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(getActivity(),new String[]{ Manifest.permission.READ_MEDIA_IMAGES},2);
+                return false;
+            }else{
+                return true;
+            }
         }else{
-            return true;
+            int permissionWriteExternal = ContextCompat.checkSelfPermission(getActivity(),
+                    Manifest.permission.READ_EXTERNAL_STORAGE);
+            if (permissionWriteExternal != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(getActivity(),new String[]{ Manifest.permission.READ_EXTERNAL_STORAGE},2);
+                return false;
+            }else{
+                return true;
+            }
         }
     }
 
